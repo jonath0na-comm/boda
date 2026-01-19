@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación Karely & Salvador</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:ital@0;1&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-oro: #c5a059;
+            --color-fondo: #fcfbf7;
+            --texto: #444;
+            --blanco: #ffffff;
+        }
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: var(--color-fondo);
+            color: var(--texto);
+            margin: 0;
+            scroll-behavior: smooth;
+        }
+        .font-dancing { font-family: 'Dancing Script', cursive; }
+        .font-playfair { font-family: 'Playfair Display', serif; }
+        .oro-text { color: var(--color-oro); }
+        .whatsapp-bg { background-color: #25D366; }
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+            url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1500&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,.05);
+            overflow: hidden;
+        }
+
+        .nav-fixed {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255,255,255,.9);
+            padding: 10px 20px;
+            border-radius: 50px;
+            display: flex;
+            gap: 15px;
+            z-index: 100;
+        }
+    </style>
+</head>
+
+<body class="pb-24">
+
+<!-- NAVEGACIÓN -->
+<nav class="nav-fixed">
+    <button class="text-[10px] font-bold uppercase tracking-widest">Invitación</button>
+</nav>
+
+<!-- SECCIÓN INVITACIÓN -->
+<div id="section-inicio">
+
+<header>
+    <p class="tracking-[4px] mb-4">ESTÁS INVITADO A LA BODA DE</p>
+    <h1 class="font-dancing text-6xl md:text-8xl mb-4">Karely & Salvador</h1>
+    <p class="text-xl tracking-[2px]">21 · FEBRERO · 2026</p>
+    <a href="#confirmar" class="mt-12 px-8 py-3 border-2 border-white rounded-full uppercase text-sm">
+        Confirmar Asistencia
+    </a>
+</header>
+
+<div class="max-w-4xl mx-auto px-4 py-16">
+
+<!-- DÓNDE SERÁ LA FIESTA -->
+<h2 class="font-playfair text-4xl text-center oro-text mb-12">¿Dónde celebraremos?</h2>
+
+<div class="card mb-16">
+    <img src="Imagen de WhatsApp 2026-01-15 a las 00.23.33_1bb97da7.jpg"
+         alt="Salón Los Adobes"
+         class="w-full max-h-[500px] object-cover">
+
+    <div class="p-8 text-center">
+        <h3 class="font-playfair text-2xl mb-2">La Celebración</h3>
+        <p class="font-bold text-xl uppercase tracking-widest">Salón Los Adobes</p>
+        <p class="text-gray-500 italic mt-2">Carretera a Ayuquila</p>
+        <p class="mt-6 oro-text font-bold text-2xl">18:00 HORAS</p>
+    </div>
+</div>
+
+<!-- ITINERARIO -->
+<h2 class="font-playfair text-4xl text-center oro-text mb-12">Itinerario</h2>
+
+<div class="space-y-4 mb-16">
+
+    <div class="flex items-center gap-6 bg-white p-6 rounded-2xl shadow-sm">
+        <div class="text-2xl font-bold oro-text min-w-[80px]">18:00</div>
+        <h4 class="font-playfair text-xl">Hora de Recepción</h4>
+    </div>
+
+    <div class="flex items-center gap-6 bg-white p-6 rounded-2xl shadow-sm">
+        <div class="text-2xl font-bold oro-text min-w-[80px]">18:30</div>
+        <h4 class="font-playfair text-xl">Ceremonia</h4>
+    </div>
+
+    <div class="flex items-center gap-6 bg-white p-6 rounded-2xl shadow-sm">
+        <div class="text-2xl font-bold oro-text min-w-[80px]">19:00</div>
+        <h4 class="font-playfair text-xl">Cóctel de bienvenida</h4>
+    </div>
+
+    <div class="flex items-center gap-6 bg-white p-6 rounded-2xl shadow-sm">
+        <div class="text-2xl font-bold oro-text min-w-[80px]">21:00</div>
+        <h4 class="font-playfair text-xl">Cena de Gala</h4>
+    </div>
+
+    <div class="flex items-center gap-6 bg-white p-6 rounded-2xl shadow-sm">
+        <div class="text-2xl font-bold oro-text min-w-[80px]">22:00</div>
+        <h4 class="font-playfair text-xl">Vals de los Novios</h4>
+    </div>
+
+    <div class="flex items-center gap-6 bg-white p-6 rounded-2xl shadow-sm">
+        <div class="text-2xl font-bold oro-text min-w-[80px]">22:30</div>
+        <h4 class="font-playfair text-xl">¡A disfrutar la fiesta!</h4>
+    </div>
+
+</div>
+
+<!-- CONFIRMAR -->
+<div id="confirmar" class="max-w-lg mx-auto bg-white p-10 rounded-3xl shadow-xl">
+    <h2 class="font-playfair text-3xl text-center mb-6">Confirmar Asistencia</h2>
+
+    <form id="weddingForm" class="space-y-6">
+        <input id="nombre" required placeholder="Nombre completo"
+               class="w-full p-3 border-b-2 outline-none">
+
+        <select id="asistencia" class="w-full p-3 border-b-2">
+            <option>Sí asistiré</option>
+            <option>No asistiré</option>
+        </select>
+
+        <button type="button" onclick="handleConfirmation()"
+                class="w-full whatsapp-bg text-white py-4 rounded-xl font-bold">
+            Confirmar por WhatsApp
+        </button>
+    </form>
+</div>
+
+</div>
+
+<footer class="text-center py-10 opacity-60">
+    <p class="font-playfair italic">¡Tu presencia es nuestro mejor regalo!</p>
+    <p class="text-xs uppercase tracking-widest mt-2">Karely & Salvador © 2026</p>
+</footer>
+
+</div>
+
+<!-- SCRIPT WHATSAPP -->
+<script>
+function handleConfirmation() {
+    const nombre = document.getElementById("nombre").value.trim();
+    const asistencia = document.getElementById("asistencia").value;
+
+    if (nombre === "") {
+        alert("Por favor escribe tu nombre completo");
+        return;
+    }
+
+    const telefono = "523211004544"; // Cambia si es necesario
+    const mensaje =
+        `Hola Karely %0A` +
+        `Confirmo mi asistencia a la boda:%0A` +
+        `Nombre: ${nombre}%0A` +
+        `Asistencia: ${asistencia}`;
+
+    const url = `https://wa.me/${telefono}?text=${mensaje}`;
+    window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
